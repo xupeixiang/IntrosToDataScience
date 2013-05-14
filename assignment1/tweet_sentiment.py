@@ -1,3 +1,13 @@
+##############################################################
+#
+# Copyright (c) 2013, Peixiang Xu(peixiangxu@gmail.com)
+#
+# This program is free software: you can redistribute it 
+# and/or modify it under the terms of the GNU General Public 
+# License as published by the Free Software Foundation.
+#
+##############################################################
+
 import sys
 import json
 
@@ -16,16 +26,10 @@ def hw(sent_file,tweet_file):
                     score += scores[term]
             print score
 
-
-def lines(fp):
-    print str(len(fp.readlines()))
-
 def main():
     sent_file = open(sys.argv[1])
     tweet_file = open(sys.argv[2])
     hw(sent_file,tweet_file)
-#lines(sent_file)
-#lines(tweet_file)
 
 if __name__ == '__main__':
     main()
